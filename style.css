@@ -1,0 +1,131 @@
+ *{
+    box-sizing: border-box;
+}
+html{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 62.5%;
+
+}
+:root{
+    --main-color:rgb(55, 137, 116);
+    --font-color:#2d2d95;
+    --heading:rgb(209, 209, 20);
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    background-color: rgb(164, 195, 195);
+    background-size:contain;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+    position: relative;
+    
+}
+
+/* header  starts from here */
+#header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background: #b2fefaae;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ed0f75d, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ed0f759, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    align-items: center;
+    position:sticky;
+    /* position: fixed; */
+   
+    top:-.5em;
+} 
+
+#header .navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    /* list-style: none; */
+    flex-wrap: wrap;
+    margin-right: 2em;
+}
+#header .navigation ul li{
+    /* background-color: red; */
+    border: 1px solid #5c20c4;
+    border-radius: 10%;
+    padding: .5em;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header .header-logo h1::before{
+
+    content: "helloe";
+    position:relative;
+    font-size: 2.2rem;
+    top: -1.2rem;
+    left: 2em;
+    text-wrap: nowrap;
+}
+
+.mens-product{
+    margin-top: .5em;
+    height: 100vh;
+    width: 100vw;
+    /* display:inline-block; */
+    display: flex;
+    background-image: url(/imsges/pexels-polina-tankilevitch-3736520.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.mens-product{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid #5c20c4; */
+    overflow: hidden;
+    
+}
+.mens-product .card{
+    height: 20rem;
+    width: 19rem;
+    display: flex;
+    justify-content: space-around;
+
+    /* flex-basis:20em; */
+    /* display: inline-flex; */
+    border: 1px solid #5c20c4;
+    overflow-x: hidden;
+    
+}
+
+.Womens-product{
+    margin-top: 0;
+    height: 200vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(/imsges/femaleshop.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.Kid-product{
+    background-image: url(/imsges/kid\ shop.jpg);
+    height: 100vh;
+    width: 100vw;
+    /* background-size:cover; */
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* .mens-product,
+.Womens-product,
+.Kid-product {
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+}  */
